@@ -1,0 +1,21 @@
+{
+  "name": "electron-broswer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./out/index.js",
+  "scripts": {
+    "dev": "tsc && echo success transpilation, electron init && cd out && electron index.js",
+    "build": "tsc && echo success transpilation, building... && electron-packager . --ignore=\"(src|tsconfig.json|.gitignore)\" --out=build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.0.3",
+    "electron-packager": "^15.1.0",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.6"
+  }
+}
